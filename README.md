@@ -10,7 +10,7 @@ A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Ba
 <table>
   <tbody>
       <tr>
-      <th>Base Material-UI Version</th>
+      <th>Base-Material-UI</th>
       <td>v0.0.2</td>
     </tr>
     <tr>
