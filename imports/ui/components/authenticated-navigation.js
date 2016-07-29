@@ -7,7 +7,7 @@ import Popover from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 import ArrowDropDown from 'material-ui/svg-icons/navigation/arrow-drop-down';
-
+import { returnActiveLink } from '../../modules/active-helpers';
 
 
 
@@ -69,9 +69,14 @@ handleLogout() {
   }
 
   render() {
-    return <div>
-            <Link to="/"  ><FlatButton style={styles.navLink} label="Index" /></Link>
-            <Link to="/documents" ><FlatButton style={styles.navLink} label="Documents" /></Link>
+    const currentPath = this.props.currentPath;
+    return <div className="navLinks" >
+            <Link to="/">
+              <FlatButton labelStyle={returnActiveLink(currentPath, '/')} style={styles.navLink} label="Index" />
+            </Link>
+            <Link to="/documents" >
+              <FlatButton labelStyle={returnActiveLink(currentPath, '/documents')} style={styles.navLink} label="Documents" />
+            </Link>
             <UserNameDropDown handleTouchTap={this.handleTouchTap} />
             <Popover
               open={this.state.open}
@@ -88,3 +93,9 @@ handleLogout() {
   }
   
 }
+
+
+AuthenticatedNavigation.propTypes = {
+  hasUser: React.PropTypes.object,
+  currentPath: React.PropTypes.string,
+};

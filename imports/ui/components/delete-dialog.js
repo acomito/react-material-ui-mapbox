@@ -82,3 +82,9 @@ export default class DialogDelete extends React.Component {
     );
   }
 }
+
+
+DialogDelete.propTypes = {
+  itemType: React.PropTypes.string,
+  deleteMethod: React.PropTypes.func,
+};

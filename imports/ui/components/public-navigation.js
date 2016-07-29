@@ -2,6 +2,7 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router';
+import { returnActiveLink } from '../../modules/active-helpers';
 
 const styles = {
   navLink: {
@@ -9,13 +10,18 @@ const styles = {
   }
 }
 
-export const PublicNavigation = () => (
-	<div>
+export const PublicNavigation = ({currentPath}) => (
+	<div className="navLinks" >
     	<Link to="/signup" >
-    		<FlatButton style={styles.navLink} label="Signup" />
+    		<FlatButton labelStyle={returnActiveLink(currentPath, '/signup')} style={styles.navLink} label="Signup" />
     	</Link>
     	<Link to="/login"  >
-    		<FlatButton style={styles.navLink} label="Login" />
+    		<FlatButton labelStyle={returnActiveLink(currentPath, '/login')}  style={styles.navLink} label="Login" />
     	</Link>
     </div>
 );
+
+
+PublicNavigation.propTypes = {
+  currentPath: React.PropTypes.string,
+};

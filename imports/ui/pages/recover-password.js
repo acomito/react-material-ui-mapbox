@@ -60,7 +60,14 @@ export class RecoverPassword extends React.Component {
         />
       <CardTitle title="Recover Password" />
         <Formsy.Form onSubmit={this.submit} onValid={this.enableButton} onInvalid={this.disableButton} className="login">
-          <FormsyText floatingLabelText="Email" style={styles.textField} value="" name="emailAddress" validations="isEmail" validationError="This is not a valid email" required />
+          <FormsyText 
+            floatingLabelText="Email" 
+            style={styles.textField}
+            name="emailAddress" 
+            validations="isEmail" 
+            validationError="This is not a valid email" 
+            required 
+          />
           <CardActions >
             <RaisedButton type="submit" secondary={true} label="Recover Password" disabled={!this.state.canSubmit} />
           </CardActions>
@@ -71,34 +78,3 @@ export class RecoverPassword extends React.Component {
 }
 
 
-/*export class RecoverPassword extends React.Component {
-  componentDidMount() {
-    handleRecoverPassword({ component: this });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-  }
-
-  render() {
-    return <Row>
-      <Col xs={ 12 } sm={ 6 } md={ 4 }>
-        <h4 className="page-header">Recover Password</h4>
-        <Alert bsStyle="info">
-          Enter your email address below to receive a link to reset your password.
-        </Alert>
-        <form ref="recoverPassword" className="recover-password" onSubmit={ this.handleSubmit }>
-          <FormGroup>
-            <FormControl
-              type="email"
-              ref="emailAddress"
-              name="emailAddress"
-              placeholder="Email Address"
-            />
-          </FormGroup>
-          <Button type="submit" bsStyle="success">Recover Password</Button>
-        </form>
-      </Col>
-    </Row>;
-  }
-}*/
