@@ -44,12 +44,10 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 * 
 
 ## TODO
-
-* Add PropTypes where needed (basically, everywhere at this point.)
+* where applicable, use this.context.muiTheme to reference the global theme object. [See here](http://www.material-ui.com/#/customization/themes)
 * Re-add re-routing logic (login, reset, etc. etc.)
-* Collapsable nav and other responsive work
-* where it makes sense, extract inline-js css styles to the .scss files
 * it would be cool to tie bert-alert color schemes into the material-ui color scheme
+* where it makes sense, extract inline-js css styles to the .scss files
 * Keep an eye out for new version of Material-UI... errors since react updated (https://facebook.github.io/react/warnings/unknown-prop.html)
 * improve documentation
 * you have to click off the input field for formsy to validate and change the submit button from disabled... minor UI blemish.
@@ -58,6 +56,8 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 * base/boilerplates with mobx/redux/flow/relay/graphql
 
 ## DONE
+* ~~Add PropTypes where needed (basically, everywhere at this point.)~~
+* ~~Collapsable nav and other responsive work~~
 * ~~decision: combine delete-dialog and update-dialog components?~~ no
 * ~~decision: flexbox grid? bootstrap grid? grid agnostic?~~ flexboxgrid
 * ~~Add file for customizing the Material-UI theme~~
