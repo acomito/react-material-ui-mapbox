@@ -11,7 +11,7 @@ A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Ba
   <tbody>
       <tr>
       <th>Base Material-UI Version</th>
-      <td>v0.0.0.1</td>
+      <td>v0.0.2</td>
     </tr>
     <tr>
       <th>Base Version</th>
@@ -37,11 +37,11 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 
 
 
-
-
 ## Other Stuff
 * [How to Do a FAB in the corner] (http://stackoverflow.com/questions/35828991/make-material-ui-reactjs-floatingactionbutton-float)
-* 
+* [AirBnB Style Guide for React] (https://github.com/airbnb/javascript/tree/master/react)
+* [MaterialUp curates the best of Material Design, daily.] (http://www.materialup.com/)
+* [Material Palette] (https://www.materialpalette.com/) 
 
 ## TODO
 * where applicable, use this.context.muiTheme to reference the global theme object. [See here](http://www.material-ui.com/#/customization/themes)
