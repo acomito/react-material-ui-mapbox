@@ -39,7 +39,7 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 
 If you haven't seen Meteor 1.3's recommended application structure yet you may be wondering where the actual code is.
 
-Most of the app is in the import folder. The UI is found in `imports/ui`. The API (methods, publications, schemas) can be found in `imports/api`
+Most of the app is in the `imports` folder. The UI is found in `imports/ui`. The API (methods, publications, schemas) can be found in `imports/api`
 
 ## Other Stuff
 * [How to Do a FAB in the corner] (http://stackoverflow.com/questions/35828991/make-material-ui-reactjs-floatingactionbutton-float)
