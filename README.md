@@ -52,10 +52,14 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 * improve documentation
 * you have to click off the input field for formsy to validate and change the submit button from disabled... minor UI blemish.
 * **Consider Other Versions:**
-* base/boilerplate for a blog/portfolio website
-* base/boilerplates with mobx/redux/flow/relay/graphql
+* mobx
+* redux
+* flux
+* relay/graphql
 
 ## DONE
+* ~~Other version: [react-material-ui-blog](https://github.com/acomito/base-material-ui-blog)~~
+* ~~Other version: [react-material-ui-wordpress](https://github.com/acomito/react-material-ui-wordpress)~~
 * ~~Add PropTypes where needed (basically, everywhere at this point.)~~
 * ~~Collapsable nav and other responsive work~~
 * ~~decision: combine delete-dialog and update-dialog components?~~ no
