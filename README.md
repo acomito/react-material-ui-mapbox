@@ -46,14 +46,11 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 ## TODO
 
 * Add PropTypes where needed (basically, everywhere at this point.)
-* it would be cool to tie bert-alert color schemes into the material-ui color scheme
-* decision: combine delete-dialog and update-dialog components?
-* decision: flexbox grid? bootstrap grid? grid agnostic?
-* where it makes sense, extract inline-js css styles to the .scss files
-* Add file for customizing the Material-UI theme
-* Keep an eye out for new version of Material-UI... errors since react updated (https://facebook.github.io/react/warnings/unknown-prop.html)
 * Re-add re-routing logic (login, reset, etc. etc.)
 * Collapsable nav and other responsive work
+* where it makes sense, extract inline-js css styles to the .scss files
+* it would be cool to tie bert-alert color schemes into the material-ui color scheme
+* Keep an eye out for new version of Material-UI... errors since react updated (https://facebook.github.io/react/warnings/unknown-prop.html)
 * improve documentation
 * you have to click off the input field for formsy to validate and change the submit button from disabled... minor UI blemish.
 * **Consider Other Versions:**
@@ -61,5 +58,8 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 * base/boilerplates with mobx/redux/flow/relay/graphql
 
 ## DONE
+* ~~decision: combine delete-dialog and update-dialog components?~~ no
+* ~~decision: flexbox grid? bootstrap grid? grid agnostic?~~ flexboxgrid
+* ~~Add file for customizing the Material-UI theme~~
 * ~~re-add validation for password-reset form~~
 * ~~wire up the username to be in top-right corner of authenticated navbar (was getting an odd error when trying to do this so I just hardcoded "username" there for now)~~
