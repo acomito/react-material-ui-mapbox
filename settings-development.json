@@ -1,7 +1,7 @@
 {
   "public": {  
-    "accessToken": "pk.eyJ1IjoiYXJjb21pdG8iLCJhIjoiY2lyYjNobDNsMDE0d2cybTNkbXJpYWRzeCJ9.2uhkO2lcl4JkgUqr5VBrRQ",
-    "mapId": "arcomito.10epca2d"
+    "accessToken": "",
+    "mapId": ""
   },
   "private": {}
 }
