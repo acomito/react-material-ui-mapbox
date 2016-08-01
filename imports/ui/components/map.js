@@ -9,8 +9,8 @@ Meteor.startup(function() {
 
 Tracker.autorun(function () {
   if (Mapbox.loaded()) {
-    L.mapbox.accessToken = "pk.eyJ1IjoiYXJjb21pdG8iLCJhIjoiY2lyYjNobDNsMDE0d2cybTNkbXJpYWRzeCJ9.2uhkO2lcl4JkgUqr5VBrRQ";
-	var map = L.mapbox.map("map", "arcomito.10epca2d");
+    L.mapbox.accessToken = "";
+	var map = L.mapbox.map("map", "");
  }
 });
 
