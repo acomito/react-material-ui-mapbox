@@ -20,7 +20,7 @@ accounts-password
 accounts-base
 check
 audit-argument-checks
-browser-policy
+#browser-policy
 
 fourseven:scss
 aldeed:collection2
